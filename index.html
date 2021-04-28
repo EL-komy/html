@@ -1,60 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Photo</title>
-<style>
-    .nav-item {
-        padding: 10px;
-    }
-    .img{
-        display: flex;
-        justify-content: space-around;
-    }
-    .button{
-        background-color: #011627; 
-        color: white;
-    }
-</style>
+    <title>Photo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+          rel="stylesheet">
+    <style>
+        .nav-item {
+            padding: 10px;
+            display: inline-block;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .img {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .button {
+            background-color: #011627;
+            color: white;
+        }
+
+        .img-fluid {
+            max-width: 100% !important;
+        }
+
+        .button {
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .footer .footer-content h2 {
+            color: #FFF;
+        }
+
+        .footer .footer-content ul {
+            list-style: none;
+        }
+    </style>
 </head>
 <body style="margin:0; background-color: #E71D36;">
 <nav style=background-color:#011627>
-    <dev style="width:1366px; margin:auto; height: 60px; color:white; display: flex; align-content: center;">
-        <ul style="display: flex; flex-grow:1; list-style: none ;align-items: center ; ">
+    <div style="width:1366px; margin:auto; height: 60px; color:white; display: flex; align-content: center;">
+        <ul style="list-style: none ;align-items: center; ">
             <li class="nav-item">FEED</li>
             <li class="nav-item">AUTHORS</li>
             <li class="nav-item">EXPLORE</li>
             <li class="nav-item">BLOG</li>
             <li class="nav-item">CONTACT</li>
-         </ul>
-         
-    </dev>
-    <dev style="display: flex; ">
-        <button></button>
-    </dev>
+        </ul>
+        <ul style="list-style: none ;align-items: center; ">
+            <li class="nav-item">FEED</li>
+            <li class="nav-item">AUTHORS</li>
+            <li class="nav-item">EXPLORE</li>
+            <li class="nav-item">BLOG</li>
+            <li class="nav-item">CONTACT</li>
+        </ul>
+    </div>
 </nav>
 <main>
-    <dev>
-        <h1 style="text-align:center; font-family:verdana;font-size:300%">
-            <a style="color :inherit;text-decoration:none" href="/">
-                photo
+    <div>
+        <h1 style="text-align:center;font-size:300%">
+            <a style="color :inherit;text-decoration:none" href="#">
+                Photo
             </a>
         </h1>
-    </dev>
-    <form style="margin: 20pdx;" class="img">
-        <img src="./image/Component.svg"> 
-        <img src="./image/pexels-photo-245535.jpeg"> .
-        <img src="./image/pexels-photo-245535.jpeg"> 
+    </div>
+    <form style="margin: 20px;" class="img">
+        <img class="img-fluid" src="./image/pexels-photo-245535.jpeg" alt="IMAGE">
+        <img class="img-fluid" src="./image/pexels-photo-245535.jpeg" alt="IMAGE">
+        <img class="img-fluid" src="./image/pexels-photo-245535.jpeg" alt="IMAGE">
     </form>
-    <dev class="img" > 
-        <button class="button">read more</button>
-        <button class="button">read more</button>
-        <button class="button">read more</button>
-    </dev>
+    <div class="img">
+        <a href="blog.html" class="button">Read more</a>
+        <a href="blog.html" class="button">Read more</a>
+        <a href="blog.html" class="button">Read more</a>
+    </div>
 </main>
-<footer>
-    <p>
-
-    </p>
+<hr style="margin: 30px 0; display: block"/>
+<footer class="footer">
+    <div style="display: flex; justify-content: space-around" class="footer-content">
+        <div>
+            <h2>LINKS</h2>
+            <ul>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+            </ul>
+        </div>
+        <div>
+            <h2>LINKS</h2>
+            <ul>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+            </ul>
+        </div>
+        <div>
+            <h2>LINKS</h2>
+            <ul>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+                <li>TEST 1</li>
+            </ul>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
